@@ -2605,3 +2605,74 @@ display: block;
         margin: 0 auto;
     }
 }
+
+
+/* Skill Highlights */
+
+.skill-highlights {
+    line-height: 1.6;
+}
+
+.skill-highlights > p {
+    margin-bottom: 30px;
+}
+
+.skill-group {
+    margin-bottom: 32px;
+}
+
+.skill-group h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.skill-tags span {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 20px;
+
+    background: rgba(128, 128, 128, 0.12);
+    border: 1px solid rgba(128, 128, 128, 0.3);
+
+    color: inherit;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.skill-tags span:hover {
+    transform: translateY(-3px);
+    background: rgba(128, 128, 128, 0.22);
+    border-color: currentColor;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 600px) {
+    .skill-tags {
+        gap: 7px;
+    }
+
+    .skill-tags span {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    .skill-group h2 {
+        font-size: 1.05rem;
+    }
+}
