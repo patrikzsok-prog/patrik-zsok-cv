@@ -2855,3 +2855,25 @@ display: block;
         font-size: 0.75rem;
     }
 }
+
+
+/* Dark frame around portfolio videos only */
+
+.portfolio-page .name-card-iq-5 iframe {
+    box-sizing: content-box;
+
+    background: var(--bg-primary);
+    border: 1px solid rgba(182, 182, 182, 0.25);
+    border-radius: 10px;
+
+    padding: 32px;
+	border-radius: 12px;
+
+    display: block;
+    width: calc(100% - 18px);
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+
+    margin: 15px auto;
+}
