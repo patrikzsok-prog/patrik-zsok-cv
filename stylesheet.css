@@ -2677,3 +2677,181 @@ display: block;
         margin: 0 auto;
     }
 }
+
+
+
+/* Featured Software Projects */
+
+.portfolio-page .software-section {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    padding: 30px clamp(12px, 2.5vw, 32px);
+}
+
+.software-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.software-project-card {
+    min-width: 0;
+    overflow: hidden;
+    background: var(--bg-primary);
+    border: 1px solid rgba(182, 182, 182, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.software-project-card > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    margin: 0;
+    z-index: auto;
+}
+
+.software-project-content {
+    padding: 18px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.portfolio-page .software-project-content h3,
+.portfolio-page .software-skill-group h3 {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.portfolio-page .software-project-content p {
+    margin: 0;
+    color: var(--text-primary);
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Technology tags */
+
+.software-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.software-tags span {
+    display: inline-block;
+    padding: 6px 11px;
+    border: 1px solid rgba(182, 182, 182, 0.35);
+    border-radius: 20px;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    overflow-wrap: anywhere;
+}
+
+/* GitHub links */
+
+.software-project-link {
+    color: #b9a6ff;
+    text-decoration: none;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.software-project-link:hover,
+.software-project-link:focus-visible {
+    color: #ececec;
+    text-decoration: underline;
+}
+
+/* Programming & Technologies */
+
+.software-skill-group {
+    width: 100%;
+    max-width: 950px;
+    margin: 14px auto 20px;
+    text-align: left;
+}
+
+.software-skill-group h3 {
+    margin-bottom: 12px !important;
+}
+
+/* Medium screens: 2 columns */
+
+@media (max-width: 1200px) {
+    .software-project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Small screens: 1 column */
+
+@media (max-width: 760px) {
+    .software-project-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .software-project-card {
+        width: 100%;
+        max-width: 600px;
+        margin-inline: auto;
+    }
+
+    .portfolio-page .software-section {
+        padding: 24px 12px;
+    }
+}
+
+/* Programming & Technologies tags */
+
+.portfolio-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+    margin: 15px 0 25px;
+}
+
+.portfolio-tech-tags span {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 20px;
+
+    background: var(--bg-secondary);
+    border: 1px solid rgba(182, 182, 182, 0.35);
+    color: var(--text-secondary);
+
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    transition: transform 0.2s ease,
+                background 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.portfolio-tech-tags span:hover {
+    transform: translateY(-3px);
+    background: var(--bg-primary);
+    border-color: #6649b8;
+}
+
+@media (max-width: 600px) {
+    .portfolio-tech-tags {
+        gap: 7px;
+    }
+
+    .portfolio-tech-tags span {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+}
